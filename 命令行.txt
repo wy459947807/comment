@@ -1,0 +1,15 @@
+npm install webpack webpack-dev-server vue-loader vue-html-loader css-loader vue-style-loader vue-hot-reload-api babel-loader babel-core babel-plugin-transform-runtime babel-preset-es2015 babel-runtime@5 --save-dev
+npm install html-webpack-plugin --save-dev
+npm install vue --save
+
+运行构建命令 ： webpack –display-modules –display-chunks –config build/webpack.dev.conf.js
+
+清除缓存：npm cache clean
+
+运行package.json scripts命令 npm run dev
+
+压力测试：apache/bin目录下执行：ab -n 100 -c 10 http://test.com/
+
+package.json操作：
+运行：npm run dev
+安装：npm安装package.json时  直接转到当前项目目录下用命令npm install 或npm install --save-dev安装即可，自动将package.json中的模块安装到node-modules文件夹下
